@@ -4,51 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+}        
+    </style>
+
+    <style>
+        .book-container {
+            width: 175px;
+            height: 250px;
+        }
+
+        .book-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+    </style>
     <title>简单翻页效果</title>
 </head>
 <body>
-    <button id="prev-btn" class="perv-btn">上一页</button>
-    <div class="book">
-        <div id="p1" class="paper">
-            <div class="front">
-                <div class="content">
-                    <img src="./images/1.jpeg" alt="">
-                </div>
-            </div>
-            <div class="back">
-                <div class="content">
-                    <img src="./images/2.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-        <div id="p2" class="paper">
-            <div class="front">
-                <div class="content">
-                    <img src="./images/3.jpeg" alt="">
-                </div>
-            </div>
-            <div class="back">
-                <div class="content">
-                    <img src="./images/4.jpeg" alt="">
-                </div>
-            </div>
+    <button style="transition: transform 0.5s;"  id="prev-btn" class="perv-btn">上一页</button>
 
-        </div>
-        <div id="p3" class="paper">
-            <div class="front">
-                <div class="content">
-                    <img src="./images/5.jpeg" alt="">
-                </div>
-            </div>
-            <div class="back">
-                <div class="content">
-                    结束
-                </div>
-            </div>
-        </div>
+    <div id="book-container" class="book-container">
+        <img src="./images/1.jpeg" alt="">
+        <img src="./images/2.jpeg" alt="">
+        <img src="./images/3.jpeg" alt="">
+        <img src="./images/4.jpeg" alt="">
+        <img src="./images/5.jpeg" alt="">
+        <img src="./images/6.jpeg" alt="">
     </div>
-    <button id="next-btn" class="next-btn">下一页</button>
-    <script src="./js/main.js"></script>
+
+    <button style="transition: transform 0.5s;" id="next-btn" class="next-btn">下一页</button>
+
+
+
+    <script src="./js/flipped.js"></script>
 </body>
 </html>
