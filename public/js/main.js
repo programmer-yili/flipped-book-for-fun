@@ -1,22 +1,9 @@
+const nextBtn = document.querySelector("#next-btn")
+const paper1 = document.querySelector("#p1")
+const paper2 = document.querySelector("#p2")
+const paper3 = document.querySelector("#p3")
 
-const timeElement = document.getElementById('time')
 
-timeElement.innerHTML = "当前时间：" + new Date().toString("M/d/yyyy")
-
-const interval = setInterval(()=>{
-    timeElement.innerHTML = "当前时间：" + new Date().toString("M/d/yyyy")
-}, 1000)
-
-const sloganElement = document.getElementById('slogan')
-
-document.getElementById('logo').addEventListener('mouseover', ()=> {
-    sloganElement.style.color = '#000'
-    sloganElement.style.textShadow = '0 5px 5px rgba(0, 0, 0, 0.2)'
+nextBtn.addEventListener("click", () => {
+    page1.classList.add("flipped")
 })
-
-document.getElementById('logo').addEventListener('mouseout', ()=> {
-    sloganElement.style.color = '#fff'
-    sloganElement.style.textShadow = 'none'
-
-})
-

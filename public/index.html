@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="./css/main.css">
-    <title>程序猿依力前端练习脚手架</title>
+    <title>简单翻页效果</title>
 </head>
 <body>
-    <div class="main">
-        <h1>程序猿依力</h1>
-        <a href="https://edu.bili-tech.com" target="_blank"><img id="logo" src="./images/logo.JPG" alt=""></a>
-        <strong id="slogan" >Coding is New Sexy</strong>
-        <span class="time" id="time"></span>
-    </div>
+    <button id="prev-btn" class="perv-btn">上一页</button>
+    <div class="book">
+        <div id="p1" class="paper">
+            <div class="front">
+                <div class="content">
+                    <img src="./images/1.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div class="content">
+                    <img src="./images/2.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="p2" class="paper">
+            <div class="front">
+                <div class="content">
+                    <img src="./images/3.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div class="content">
+                    <img src="./images/4.jpeg" alt="">
+                </div>
+            </div>
 
+        </div>
+        <div id="p3" class="paper">
+            <div class="front">
+                <div class="content">
+                    <img src="./images/5.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div class="content">
+                    结束
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="next-btn" class="next-btn">下一页</button>
     <script src="./js/main.js"></script>
 </body>
 </html>
